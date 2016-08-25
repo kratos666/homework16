@@ -1,0 +1,17 @@
+extends layout
+block title
+	title Category
+block content
+	div.bredcramp
+	div.content
+		section.coats
+			p.title coats
+			a.show show more
+				i.arrow-min
+			div.items
+				- var coast = [{img:'http://lorempixel.com/200/300/',name:'Double-Layered Top',cost:'€ 89'},{img:'http://lorempixel.com/200/300/',name:'Double-Layered Top',cost:'€ 14.98,'},{img:'http://lorempixel.com/200/300/',name:'Double-Layered Top',cost:'€ 43,15'}]
+				each i in coast
+					+galera(i)
+				
+	+slider('Check our lookbook')
+		

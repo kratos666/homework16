@@ -1,0 +1,97 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+a {
+  text-decoration: none;
+  color: #303030;
+}
+h2 {
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+body {
+  line-height: 1;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  background-color: #e5e5e5;
+}
+body .wrapper {
+  padding: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+body header {
+  display: flex;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #e5e5e5;
+  justify-content: space-between;
+}
+body header div {
+  align-self: baseline;
+  padding: 0 20px;
+}
+body header .logo {
+  padding: 14px;
+  background: #222;
+  color: #fff;
+  align-self: baseline;
+}
+body header .main-menu .items {
+  display: flex;
+}
+body header .main-menu .items .item a {
+  display: inline-block;
+  padding: 12px;
+}
+/*serch*/
+.search-form {
+  display: inline-block;
+}
+.search-form .fieldwrap {
+  position: relative;
+}
+.search-form .fieldwrap input {
+  padding: 12px;
+}
+.search-form .fieldwrap .lens {
+  height: 100%;
+  width: 43px;
+  position: absolute;
+  background-color: #303030;
+}
+/*content*/
+.content .title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 65px 0 20px;
+}
+.content .items {
+  display: flex;
+  justify-content: space-between;
+}
+/*footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .block-menu {
+  flex: 1 1;
+}
+footer .block-menu a {
+  line-height: 21px;
+}

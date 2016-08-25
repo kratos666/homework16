@@ -1,0 +1,86 @@
+@import 'https://fonts.googleapis.com/css?family=Lato'
+color1 = #303030
+color2 = #222222
+color3 = #e5e5e5
+color4 = #fff
+font-size = 14px
+* 
+	box-sizing border-box
+	padding 0
+	margin 0
+ol
+ul
+	list-style none
+blockquote
+q
+	quotes none
+a
+	text-decoration none
+	color color1
+h2
+	padding 15px 0
+	font-size 14px
+	font-weight bold
+	text-align left
+body
+	line-height 1
+	font-family: 'Lato', sans-serif;
+	font-size 14px
+	background-color color3 
+	.wrapper
+		padding 35px
+		max-width 1200px
+		margin 0 auto
+		background-color color4
+	header
+		display flex
+		padding-bottom 45px
+		border-bottom  1px solid color3 
+		justify-content space-between
+		div
+			align-self baseline
+			padding 0 20px
+		.logo
+			padding 14px
+			background color2
+			color #fff
+			align-self baseline
+		.main-menu
+			.items
+				display flex
+				.item a
+					display inline-block
+					padding 12px
+					
+/*serch*/
+.search-form
+	display inline-block
+	.fieldwrap
+		position relative
+		input
+			padding 12px
+		.lens
+			height 100%
+			width 43px
+			position absolute
+			background-color color1
+			
+/*content*/
+.content
+	.title
+		font-size 36px
+		text-align center
+		text-transform uppercase
+		padding 65px 0 20px
+	.items
+		display flex
+		justify-content space-between
+
+/*footer*/
+footer
+	display flex
+	justify-content space-between
+	.block-menu
+		flex 1 1
+		a
+			line-height (font-size+7)

@@ -1,0 +1,5 @@
+- var menuItems = [{url:'details.html', name:"Woman"},{url:'main.html',name:"Man"},{url:'category.html',name:"Kids"},{url:'/comming',name:"Comming Soon"},{url:'/about',name:"About"}]
+.main-menu
+	+createMenu()
+		each i in menuItems
+			+navItem(i)

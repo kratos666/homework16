@@ -1,0 +1,18 @@
+-var member = 'Vikrome'
+-var baskCount = '12'
+header.flex
+	span.logo SH
+	include menu
+	-if(member.length)
+		.login
+			i.mem
+			span Hi, #{member}
+			a(href="/logout") (logout)
+	-else
+		.login
+			i.mem
+			span Log In
+	.basket
+		i.bask
+		span Basket (#{baskCount})
+	include search

@@ -1,0 +1,28 @@
+
+mixin createMenu(title)
+	div.block-menu
+		h2=title
+		ul.flex.items
+			block
+			
+mixin navItem(object)
+	li.item
+		if object.url != null
+			a(href=object.url) #{object.name}
+				if object.count != null
+					span (#{object.count})
+		else
+			span(class='#{object.classes}') #{object.name}
+			
+mixin slider(title)
+	div.block-slider
+		h2.slider-title=title
+		span.arrow.prev
+		div.slide-items
+		span.arrow.next
+		
+mixin galera(items)
+	div.gal-item
+		image(src=items.img)
+		p.gal-name #{items.name}
+		span.gal-cost #{items.cost}

@@ -1,0 +1,14 @@
+include includes/mixins
+
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		block title
+		block css
+			link(rel="stylesheet", href="../css/style.css")
+	body
+		div.wrapper
+			include includes/header
+			block content
+			include includes/footer
