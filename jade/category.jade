@@ -4,14 +4,31 @@ block title
 block content
 	div.bredcramp
 	div.content
-		section.coats
+		section
 			p.title coats
 			a.show show more
 				i.arrow-min
 			div.items
-				- var coast = [{img:'http://lorempixel.com/200/300/',name:'Double-Layered Top',cost:'€ 89'},{img:'http://lorempixel.com/200/300/',name:'Double-Layered Top',cost:'€ 14.98,'},{img:'http://lorempixel.com/200/300/',name:'Double-Layered Top',cost:'€ 43,15'}]
+				- var coast = [{img:'http://lorempixel.com/208/256/',name:'Double-Layered Top',cost:'€ 89'},{img:'http://lorempixel.com/208/256/',name:'Double-Layered Top',cost:'€ 14.98,'},{img:'http://lorempixel.com/208/256/',name:'Double-Layered Top',cost:'€ 43,15'},{img:'http://lorempixel.com/208/256/',name:'Double-Layered Top',cost:'€ 43,15'}]
 				each i in coast
 					+galera(i)
-				
+		section
+			p.title Outerwear
+			a.show show more
+				i.arrow-min
+			div.items
+				- var coast = [{img:'http://lorempixel.com/208/256/',name:'Double-Layered Top',cost:'€ 89'},{img:'http://lorempixel.com/208/256/',name:'Double-Layered Top',cost:'€ 14.98,'},{img:'http://lorempixel.com/208/256/',name:'Double-Layered Top',cost:'€ 43,15'},{img:'http://lorempixel.com/208/256/',name:'Double-Layered Top',cost:'€ 43,15'}]
+				each i in coast
+					+galera(i)
+		section
+			p.title T-shirts
+			a.show show more
+				i.arrow-min
+			div.items
+				- var coast = [{img:'http://lorempixel.com/208/256/',name:'Double-Layered Top',cost:'€ 89'},{img:'http://lorempixel.com/208/256/',name:'Double-Layered Top',cost:'€ 14.98,'},{img:'http://lorempixel.com/208/256/',name:'Double-Layered Top',cost:'€ 43,15'},{img:'http://lorempixel.com/208/256/',name:'Double-Layered Top',cost:'€ 43,15'}]
+				each i in coast
+					+galera(i)
 	+slider('Check our lookbook')
-		
+		- var images = [{url:'http://lorempixel.com/198/118/'},{url:'http://lorempixel.com/198/118/'},{url:'http://lorempixel.com/198/118/'},{url:'http://lorempixel.com/198/118/'},{url:'http://lorempixel.com/198/118/'},{url:'http://lorempixel.com/198/118/'},{url:'http://lorempixel.com/198/118/'}]
+		each i in images
+			+sliderItems(i)

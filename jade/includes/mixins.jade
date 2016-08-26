@@ -17,12 +17,15 @@ mixin navItem(object)
 mixin slider(title)
 	div.block-slider
 		h2.slider-title=title
-		span.arrow.prev
 		div.slide-items
-		span.arrow.next
+			block
 		
 mixin galera(items)
 	div.gal-item
 		image(src=items.img)
 		p.gal-name #{items.name}
 		span.gal-cost #{items.cost}
+
+mixin sliderItems(img)
+	div.slide-item
+		img(src=img.url)

@@ -75,14 +75,66 @@ body header .main-menu .items .item a {
 }
 /*content*/
 .content .title {
+  font-weight: bold;
   font-size: 36px;
   text-align: center;
   text-transform: uppercase;
   padding: 65px 0 20px;
 }
+.content .show {
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 18px;
+  font-family: Georgia;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+.content .show .arrow-min {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-left-color: #303030;
+  border-right: 0;
+  margin-left: 10px;
+}
 .content .items {
+  flex-wrap: wrap;
+  padding: 60px 0 150px;
   display: flex;
   justify-content: space-between;
+}
+.content .items .gal-item {
+  text-align: center;
+}
+.content .items .gal-item .gal-name {
+  padding: 30px 0 10px;
+  font-weight: bold;
+}
+/*slider*/
+.slider-title {
+  font: italic 24px/27px Georgia;
+  color: #606060;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.slide-items {
+  position: relative;
+  display: flex;
+  height: 118px;
+  overflow: hidden;
+  width: 100%;
+}
+.slide-items .slide-items {
+  width: 16.666666666666668%;
+}
+.slide-items :before,
+.slide-items :after {
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  background-color: gba(255, 255, 255, 0.6);
 }
 /*footer*/
 footer {
