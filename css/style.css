@@ -50,7 +50,7 @@ h4 {
   border: 1px solid #303030;
 }
 .gr-bg {
-  background-color: #f1f1f1;
+  background-color: #d2d2d2;
 }
 .deepgrey-bg {
   background-color: #bbb;
@@ -273,7 +273,21 @@ header .login a {
   display: flex;
   flex-wrap: wrap;
 }
+.cube-wrap .column {
+  color: #fff;
+}
+.cube-wrap .column .upper {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.cube-wrap .column .ital {
+  font-size: 18px;
+  font-family: Georgia;
+  padding: 10px;
+}
 .cube-wrap .column .rectangl {
+  padding: 0 60px;
+  text-align: center;
   display: flex;
   align-items: center;
   width: 282px;
@@ -281,8 +295,11 @@ header .login a {
   flex-direction: column;
   justify-content: center;
 }
+.cube-wrap .column .rectangl .ital {
+  text-transform: uppercase;
+}
 .cube-wrap .column .cube {
-  padding: 60px;
+  padding: 50px;
   width: 282px;
   height: 282px;
   display: flex;
@@ -290,6 +307,10 @@ header .login a {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.cube-wrap .column .cube .ital {
+  font-size: 12px;
+  line-height: 14px;
 }
 /*footer*/
 footer {
