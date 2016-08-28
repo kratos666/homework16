@@ -7,13 +7,16 @@ block title
 block content
 	section.item-image
 		img(src="http://lorempicsum.com/rio/1180/590/9", alt="")
-		ul
+		ul.prev
 			li
-				a(href="")
+				a
+					img(src="http://lorempixel.com/70/70/animals")
 			li
-				a(href="")
+				a
+					img(src="http://lorempixel.com/70/70/fashion")
 			li
-				a(href="")
+				a
+					img(src="http://lorempixel.com/70/70/nature")
 	section.description
 		h1.title Floral primsoll
 		p.art.ital Article number: 14210160762
@@ -30,10 +33,10 @@ block content
 			span.size-item 40
 			span.size-item 41
 			span.size-item 42
-		button add do cart
+		button.button add do cart
 		+slider('You may also like')
 			- var images = [{url:'http://lorempixel.com/198/118/'},{url:'http://lorempixel.com/198/118/'},{url:'http://lorempixel.com/198/118/'},{url:'http://lorempixel.com/198/118/'},{url:'http://lorempixel.com/198/118/'},{url:'http://lorempixel.com/198/118/'},{url:'http://lorempixel.com/198/118/'}]
 			each i in images
 				+sliderItems(i)
 
-		p.grey-block Show me more related clothes
+		p.grey-block.gr-bg Show me more related clothes
