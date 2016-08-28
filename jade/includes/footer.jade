@@ -1,6 +1,7 @@
 - var menu1 = [{url:'#',name:'Women',count:1725},{url:'#',name:'Men',count:635},{url:'#',name:'Kids',count:2514},{url:'#',name:'Comming Soon',count:76}]
 - var menu2 = [{url:'#',name:'Terms of Service'},{url:'#',name:'Privacy Policy'},{url:'#',name:'Copyright Policy'},{url:'#',name:'Press Kit'},{url:'#',name:'Support'}]
 - var menu3 = [{url:'/about',name:'About us'},{url:'#',name:'Shipping Metods'},{url:'#',name:'Career'},{url:'#',name:'Contact'}]
+-var social = [{href:'http://twitter',name:'twitter'},{href:'http://facebook',name:'facebook'},{href:'http://instagramm',name:'instagramm'},]
 footer
 	+createMenu("Collection")
 		each i in menu1
@@ -16,9 +17,5 @@ footer
 		p.
 			Shoper is made with love in Warsaw, 2014 © All rights reserved. El Passion
 		.social-linc
-			a(href="/twitter")
-				i.twit
-			a(href="/facebook")
-				i.face
-			a(href="/instagramm")
-				i.inst
+			each i in social
+				+social(i)

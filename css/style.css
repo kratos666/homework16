@@ -131,35 +131,19 @@ header .login a {
   background-color: #303030;
   background-image: url("../images/lens.png");
 }
+.search-form .fieldwrap.mail .lens {
+  background-image: none;
+  background-color: #f68236;
+}
 .title {
   color: #000;
   font-weight: bold;
   font-size: 36px;
   text-align: center;
   text-transform: uppercase;
-}
-/*content*/
-.content .title {
   padding: 65px 0 20px;
 }
-.content .show {
-  text-decoration: underline;
-  font-style: italic;
-  font-size: 18px;
-  font-family: Georgia;
-  text-align: center;
-  display: block;
-  cursor: pointer;
-}
-.content .show .arrow-min {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border: 4px solid transparent;
-  border-left-color: #303030;
-  border-right: 0;
-  margin-left: 10px;
-}
+/*content*/
 .content .items {
   flex-wrap: wrap;
   padding: 60px 0 150px;
@@ -172,6 +156,24 @@ header .login a {
 .content .items .gal-item .gal-name {
   padding: 30px 0 10px;
   font-weight: bold;
+}
+.show {
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 18px;
+  font-family: Georgia;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+.show .arrow-min {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-left-color: #303030;
+  border-right: 0;
+  margin-left: 10px;
 }
 /*slider*/
 .slider-title {
@@ -237,7 +239,7 @@ header .login a {
 }
 .description {
   text-align: center;
-  padding: 40px 0 60px;
+  padding-bottom: 60px;
 }
 .description p {
   padding: 10px;
@@ -264,28 +266,31 @@ header .login a {
   color: #606060;
 }
 /*main*/
-.big {
+.main {
+  text-align: center;
+}
+.main .big {
   font-size: 24px;
   text-align: center;
   font-family: Georgia;
 }
-.cube-wrap {
+.main .cube-wrap {
   display: flex;
   flex-wrap: wrap;
 }
-.cube-wrap .column {
+.main .cube-wrap .column {
   color: #fff;
 }
-.cube-wrap .column .upper {
+.main .cube-wrap .column .upper {
   font-size: 24px;
   text-transform: uppercase;
 }
-.cube-wrap .column .ital {
+.main .cube-wrap .column .ital {
   font-size: 18px;
   font-family: Georgia;
   padding: 10px;
 }
-.cube-wrap .column .rectangl {
+.main .cube-wrap .column .rectangl {
   padding: 0 60px;
   text-align: center;
   display: flex;
@@ -295,10 +300,10 @@ header .login a {
   flex-direction: column;
   justify-content: center;
 }
-.cube-wrap .column .rectangl .ital {
+.main .cube-wrap .column .rectangl .ital {
   text-transform: uppercase;
 }
-.cube-wrap .column .cube {
+.main .cube-wrap .column .cube {
   padding: 50px;
   width: 282px;
   height: 282px;
@@ -308,9 +313,22 @@ header .login a {
   align-items: center;
   text-align: center;
 }
-.cube-wrap .column .cube .ital {
+.main .cube-wrap .column .cube .ital {
   font-size: 12px;
   line-height: 14px;
+}
+.block-sign .ital {
+  text-decoration: none;
+  padding: 20px;
+}
+.block-sign .search-form {
+  padding: 20px 0 40px;
+}
+.block-sign .lens {
+  display: inline-block;
+  vertical-align: bottom;
+  color: #fff;
+  padding-top: 14px;
 }
 /*footer*/
 footer {
@@ -322,4 +340,25 @@ footer .block-menu {
 }
 footer .block-menu a {
   line-height: 21px;
+}
+footer .social-linc {
+  margin-top: 20px;
+}
+footer .social-linc a {
+  border: 1px solid #606060;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  margin-right: 15px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+footer .social-linc .twitter {
+  background-image: url("../images/twit.svg");
+}
+footer .social-linc .facebook {
+  background-image: url("../images/face.svg");
+}
+footer .social-linc .instagramm {
+  background-image: url("../images/inst.svg");
 }

@@ -2,50 +2,60 @@ extends layout
 block title
 	title Main
 block content 
-	h4 Hazy Shade of spring
-	p.ital.big Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.
-	div.button-wrap
-		button.button.white-button check new arrivals
-	section.cube-wrap
-		.column
-			.rectangl.gr-bg
-				p.upper HEATHER GREY BASICS
-				span.ital New Arrival
-			.cube.deepgrey-bg
-		.column
-			.cube.deepgrey-bg
-				span.midlline
-					i.twit
-				p.ital.
-					Opening Ceremony @IndonesiaFW tomorrow, PMers! Are you ready for the biggest fashion movement
-				span.mintext @PuspitaMarthaID
-			.cube.midlgrey-bg
-				p.upper chuck taylors
-				span.ital $125.00
-			.cube.verygr-bg
-				i.l-arrow
-				p.upper Jaxon Hat
-				span.ital Beanie Hat
-		.column
-			.cube.gr-bg
-			.cube.deepgrey-bg
-				span.midlline
-					i.twit
-				p.ital.
-					Girls, Girls, Girls: A Look Back at 50 Years of the Pirelli Calendar
-				span.mintext @Vogue
-			.cube.midlgrey-bg
-				p.upper basic blazer
-				span.ital from $199.00
-		.column
-			.cube.verygr-bg
-				i.l-arrow
-				p.upper elegant shoes
-				span.ital BRAIDED LEATHER
-			.rectangl.gr-bg
-				p.upper jeans for ADVENTURE
-				span.ital New Arrival
+	section.main
+		h4 Hazy Shade of spring
+		p.ital.big Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.
+		div.button-wrap
+			button.button.white-button check new arrivals
+		section.cube-wrap
+			.column
+				.rectangl.gr-bg
+					p.upper HEATHER GREY BASICS
+					span.ital New Arrival
+				.cube.deepgrey-bg
+			.column
+				.cube.deepgrey-bg
+					span.midlline
+						i.twit
+					p.ital.
+						Opening Ceremony @IndonesiaFW tomorrow, PMers! Are you ready for the biggest fashion movement
+					span.mintext @PuspitaMarthaID
+				.cube.midlgrey-bg
+					p.upper chuck taylors
+					span.ital $125.00
+				.cube.verygr-bg
+					i.l-arrow
+					p.upper Jaxon Hat
+					span.ital Beanie Hat
+			.column
+				.cube.gr-bg
+				.cube.deepgrey-bg
+					span.midlline
+						i.twit
+					p.ital.
+						Girls, Girls, Girls: A Look Back at 50 Years of the Pirelli Calendar
+					span.mintext @Vogue
+				.cube.midlgrey-bg
+					p.upper basic blazer
+					span.ital from $199.00
+			.column
+				.cube.verygr-bg
+					i.l-arrow
+					p.upper elegant shoes
+					span.ital BRAIDED LEATHER
+				.rectangl.gr-bg
+					p.upper jeans for ADVENTURE
+					span.ital New Arrival
+		.block-sign
+			.title sign up to receive our updates
+			p.ital.show Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.
+			form.search-form
+				.fieldwrap.mail
+					input(placeholder="Your e-mail" name="search")
+					i.lens add
 
-
-
+		+slider()
+			- var images = [{url:'http://lorempixel.com/198/118/city'},{url:'http://lorempixel.com/198/118/nature'},{url:'http://lorempixel.com/198/118/transport'},{url:'http://lorempixel.com/198/118/abstract'},{url:'http://lorempixel.com/198/118/city'},{url:'ttp://lorempixel.com/198/118/abstract'},{url:'http://lorempixel.com/198/118/'}]
+			each i in images
+				+sliderItems(i)
 
